@@ -1,0 +1,29 @@
+# =============================================================================
+# ApexOS skeleton provenance — written by `python -m apexos_harness package`.
+#
+# PIPELINE-OWNED SURFACES: `.apexos/**` and `.github/workflows/apexos-*.yml`
+# belong to the build-pipeline and are PRESERVED across upstream adoptions —
+# never hand-edit them in the product repo; regenerate via the harness.
+# Everything else in this repo is pipeline output from the upstream ref
+# recorded below (transform + patch queue, gate-clean at packaging time).
+# =============================================================================
+schema_version: 1
+repo: tempio
+upstream:
+  url: https://github.com/home-assistant/tempio
+  ref: main@2026-07-04
+  sha: 5420e16c8cca89903809c842b9925d5fe6778129
+apexos:
+  version: 0.1.1-dev
+  channel: dev
+packaged: '2026-07-04'
+build_pipeline:
+  org: apexinfosysindia
+  commit: 221ca3abd48bc00fed3da65888a9aa93d62e1bb4
+engine: text
+src_subdir: .
+patches: []
+gate:
+  violations: 0
+  allowed: 0
+  excluded_vendored: 0
