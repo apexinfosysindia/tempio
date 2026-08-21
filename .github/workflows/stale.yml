@@ -5,7 +5,7 @@ on:
 
 jobs:
   stale:
-    runs-on: [self-hosted, apexos-builder, linux, X64]
+    runs-on: ${{ fromJSON(vars.APEXOS_RUNSON_AMD64 || '["self-hosted","apexos-builder","linux","X64"]') }}
     steps:
       - uses: actions/stale@v10.3.0
         with:
