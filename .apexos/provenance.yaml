@@ -11,15 +11,15 @@ schema_version: 1
 repo: tempio
 upstream:
   url: https://github.com/home-assistant/tempio
-  ref: main@2026-07-04
-  sha: 5420e16c8cca89903809c842b9925d5fe6778129
+  ref: 2026.07.0
+  sha: 56918dfb7db5fec2161b2c5b37ee42f49176d34b
 apexos:
   version: 0.1.1-dev
   channel: dev
-packaged: '2026-07-07'
+packaged: '2026-09-13'
 build_pipeline:
   org: apexinfosysindia
-  commit: a10c22cdcb873eee6a0256a17a7bd0594341d40e
+  commit: c232050e651e434a4caee51a71a7e9ed281c25e3
 engine: text
 src_subdir: .
 patches: []
